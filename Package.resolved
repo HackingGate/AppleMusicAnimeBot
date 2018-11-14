@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Cider",
+        "repositoryURL": "https://github.com/scottrhoyt/Cider.git",
+        "state": {
+          "branch": null,
+          "revision": "52532297bbc7c3b6e8d91633a8e4e21abba708f8",
+          "version": "0.10.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
