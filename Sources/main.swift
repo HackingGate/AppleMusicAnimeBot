@@ -27,7 +27,14 @@ let cider = CiderClient(storefront: .japan, developerToken: developerToken)
 //    sema.signal()
 //}
 
-var albumID: UInt64 = 1442200000
+let dateFormatterForAPI = DateFormatter()
+dateFormatterForAPI.dateFormat = "yyyy-MM-dd"
+let dateFormatterForJP = DateFormatter()
+dateFormatterForJP.dateFormat = DateFormatter.dateFormat(fromTemplate: "ydMMM", options: 0, locale: Locale(identifier: "ja_JP"))
+let dateFormatterForYear = DateFormatter()
+dateFormatterForYear.dateFormat = "yyyy年"
+
+var albumID: UInt64 = 1440141805
 
 func getAlbumByIdIncresement() {
     cider.album(id: String(albumID)) { (results, error) in
@@ -37,17 +44,28 @@ func getAlbumByIdIncresement() {
         
         if let results = results {
             if let attributes = results.attributes {
-                if attributes.genreNames.contains("アニメ") {
+                if attributes.genreNames.first == "アニメ" {
                     print(attributes.name + " " + String(albumID) + " is anisong")
                     print("URL is " + attributes.url.absoluteString)
                     
-                    let tweetText = "「" + attributes.name + "」がApple Musicに追加されました。" + "\n" + attributes.url.absoluteString
-
-                    // Toot on Mastodon
-                    shell("python", "Mastodon/toot.py", tweetText)
+                    guard let date = dateFormatterForAPI.date(from: attributes.releaseDate) else { fatalError("DateFormatter error") }
                     
-                    // Tweet on Twitter
-                    shell("python", "Twitter/tweet.py", tweetText)
+                    var contentText = attributes.artistName + "の" + "「" + attributes.name + "」\n"
+                        + "アルバム・" + dateFormatterForYear.string(from: date) + "・\(attributes.trackCount)曲\n"
+                        + attributes.url.absoluteString
+                    
+                    if date > Date() {
+                        // not yet released
+                        contentText = contentText + "\n予約注文: リリース予定日：" + dateFormatterForJP.string(from: date)
+                    } else {
+                        contentText = "【Apple Music 配信中】\n" + contentText
+                        
+                        // Toot on Mastodon
+                        shell("python", "Mastodon/toot.py", contentText)
+                        
+                        // Tweet on Twitter
+                        shell("python", "Twitter/tweet.py", contentText)
+                    }
                     
                 } else {
                     print(attributes.name + " " + String(albumID) + " is not anisong")
