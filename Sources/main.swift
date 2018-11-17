@@ -35,7 +35,7 @@ dateFormatterForJP.dateFormat = DateFormatter.dateFormat(fromTemplate: "ydMMM", 
 let dateFormatterForYear = DateFormatter()
 dateFormatterForYear.dateFormat = "yyyy年"
 
-var albumID: UInt64 = 1440141805
+var albumID: UInt64 = 1441410630
 
 func getAlbumByIdIncresement() {
     cider.album(id: String(albumID)) { (results, error) in
@@ -65,16 +65,6 @@ func getAlbumByIdIncresement() {
                     var contentText = attributes.artistName + "の" + "「" + attributes.name + "」\n"
 //                        + "アルバム・" + dateFormatterForYear.string(from: date) + "・\(attributes.trackCount)曲\n"
                     
-                    // Add genreName as hashtag
-                    for genreName in attributes.genreNames {
-                        // J-Pop -> JPop, R&B -> RnB, RnB／ソウル -> RnB #ソウル
-                        let genreHashtag = genreName.replacingOccurrences(of: "-", with: "")
-                            .replacingOccurrences(of: "&", with: "n")
-                            .replacingOccurrences(of: "／", with: " #")
-                        // "JPop" -> "#JPop ", "RnB #ソウル" -> "#RnB #ソウル "
-                        contentText = contentText + "#" + genreHashtag + " "
-                    }
-                    
                     if attributes.playParams != nil {
                         // Apple Music
                         contentText = "【Apple Music 配信中】\n" + contentText
@@ -92,12 +82,22 @@ func getAlbumByIdIncresement() {
                         }
                     }
                     
+                    // Add genreName as hashtag before url 
+                    for genreName in attributes.genreNames {
+                        // J-Pop -> JPop, R&B -> RnB, RnB／ソウル -> RnB #ソウル
+                        let genreHashtag = genreName.replacingOccurrences(of: "-", with: "")
+                            .replacingOccurrences(of: "&", with: "n")
+                            .replacingOccurrences(of: "／", with: " #")
+                        // "JPop" -> "#JPop ", "RnB #ソウル" -> "#RnB #ソウル "
+                        contentText = contentText + "#" + genreHashtag + " "
+                    }
+                    
                     // Add url to the end
                     contentText = contentText + "\n" + attributes.url.absoluteString
                     
                     print(contentText)
                     
-                    if attributes.playParams != nil && !isExplicit {
+                    if !isExplicit {
                         // Toot on Mastodon
                         shell("python", "Mastodon/toot.py", contentText)
                         // Tweet on Twitter
