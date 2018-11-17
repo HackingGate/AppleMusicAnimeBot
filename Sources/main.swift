@@ -43,26 +43,57 @@ func getAlbumByIdIncresement() {
 //        }
         
         if let results = results {
-            if let attributes = results.attributes {
+            if let attributes = results.attributes, let relationships = results.relationships {
                 if attributes.genreNames.first == "アニメ" {
                     print(attributes.name + " " + String(albumID) + " is anisong")
-                    print("URL is " + attributes.url.absoluteString)
                     
                     guard let date = dateFormatterForAPI.date(from: attributes.releaseDate) else { fatalError("DateFormatter error") }
                     
-                    var contentText = attributes.artistName + "の" + "「" + attributes.name + "」\n"
-                        + "アルバム・" + dateFormatterForYear.string(from: date) + "・\(attributes.trackCount)曲\n"
-                        + attributes.url.absoluteString
+                    // Detect explicit
+                    var isExplicit = false
+                    if let trackDataArray = relationships.tracks.data {
+                        for trackData in trackDataArray {
+                            if trackData.attributes?.contentRating == ContentRating.explicit {
+                                isExplicit = true
+                                continue
+                            }
+                        }
+                    }
                     
-                    if date > Date() {
-                        // not yet released
-                        contentText = contentText + "\n予約注文: リリース予定日：" + dateFormatterForJP.string(from: date)
-                    } else {
+                    // Create content to post
+                    var contentText = attributes.artistName + "の" + "「" + attributes.name + "」\n"
+//                        + "アルバム・" + dateFormatterForYear.string(from: date) + "・\(attributes.trackCount)曲\n"
+                    
+                    // Add genreName as hashtag
+                    for genreName in attributes.genreNames {
+                        // J-Pop -> JPop, R&B -> RnB, RnB／ソウル -> RnB #ソウル
+                        let genreHashtag = genreName.replacingOccurrences(of: "-", with: "")
+                            .replacingOccurrences(of: "&", with: "n")
+                            .replacingOccurrences(of: "／", with: " #")
+                        // "JPop" -> "#JPop ", "RnB #ソウル" -> "#RnB #ソウル "
+                        contentText = contentText + "#" + genreHashtag + " "
+                    }
+                    
+                    if attributes.playParams != nil {
+                        // Apple Music
                         contentText = "【Apple Music 配信中】\n" + contentText
-                        
+                    } else {
+                        // iTunes Store
+                        contentText = "【iTunes Store 配信中】\n" + contentText
+                        if date > Date() {
+                            // not yet released
+                            contentText = contentText + "\n予約注文: リリース予定日：" + dateFormatterForJP.string(from: date)
+                        }
+                    }
+                    
+                    // Add url to the end
+                    contentText = contentText + "\n" + attributes.url.absoluteString
+                    
+                    print(contentText)
+                    
+                    if attributes.playParams != nil && !isExplicit {
                         // Toot on Mastodon
                         shell("python", "Mastodon/toot.py", contentText)
-                        
                         // Tweet on Twitter
                         shell("python", "Twitter/tweet.py", contentText)
                     }
