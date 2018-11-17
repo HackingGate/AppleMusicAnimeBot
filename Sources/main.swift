@@ -62,7 +62,7 @@ func getAlbumByIdIncresement() {
                     }
                     
                     // Create content to post
-                    var contentText = attributes.artistName + "の" + "「" + attributes.name + "」\n"
+                    var contentText = attributes.artistName + "の" + "「" + attributes.name + "」"
 //                        + "アルバム・" + dateFormatterForYear.string(from: date) + "・\(attributes.trackCount)曲\n"
                     
                     if attributes.playParams != nil {
@@ -82,7 +82,10 @@ func getAlbumByIdIncresement() {
                         }
                     }
                     
-                    // Add genreName as hashtag before url 
+                    // Add genreName as hashtag before url
+                    if attributes.genreNames.count > 0 {
+                        contentText = contentText + "\n"
+                    }
                     for genreName in attributes.genreNames {
                         // J-Pop -> JPop, R&B -> RnB, RnB／ソウル -> RnB #ソウル
                         let genreHashtag = genreName.replacingOccurrences(of: "-", with: "")
