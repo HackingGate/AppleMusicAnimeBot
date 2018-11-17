@@ -7,39 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		OBJ_52 /* CurrentAlbumID.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* CurrentAlbumID.swift */; };
-		OBJ_53 /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Shell.swift */; };
-		OBJ_54 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Token.swift */; };
-		OBJ_55 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* main.swift */; };
-		OBJ_57 /* Cider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Cider::Cider::Product" /* Cider.framework */; };
-		OBJ_65 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_70 /* CiderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* CiderClient.swift */; };
-		OBJ_71 /* CiderUrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* CiderUrlBuilder.swift */; };
-		OBJ_72 /* Include.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Include.swift */; };
-		OBJ_73 /* UrlFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* UrlFetcher.swift */; };
-		OBJ_74 /* AppleMusicAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* AppleMusicAPIError.swift */; };
-		OBJ_75 /* Relationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Relationship.swift */; };
-		OBJ_76 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Resource.swift */; };
-		OBJ_77 /* ResponseRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* ResponseRoot.swift */; };
-		OBJ_78 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* SearchResults.swift */; };
-		OBJ_79 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Album.swift */; };
-		OBJ_80 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Artist.swift */; };
-		OBJ_81 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* Artwork.swift */; };
-		OBJ_82 /* ContentRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* ContentRating.swift */; };
-		OBJ_83 /* Curator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Curator.swift */; };
-		OBJ_84 /* EditorialNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* EditorialNotes.swift */; };
-		OBJ_85 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Genre.swift */; };
-		OBJ_86 /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* MediaType.swift */; };
-		OBJ_87 /* MusicVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* MusicVideo.swift */; };
-		OBJ_88 /* PlayParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* PlayParameters.swift */; };
-		OBJ_89 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Playlist.swift */; };
-		OBJ_90 /* Storefront.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* Storefront.swift */; };
-		OBJ_91 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Track.swift */; };
-		OBJ_98 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* Package.swift */; };
+		76567EAE21A00F3300D34E6B /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76567EAD21A00F3300D34E6B /* HTMLParser.swift */; };
+		OBJ_100 /* MusicVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* MusicVideo.swift */; };
+		OBJ_101 /* PlayParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* PlayParameters.swift */; };
+		OBJ_102 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Playlist.swift */; };
+		OBJ_103 /* Storefront.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* Storefront.swift */; };
+		OBJ_104 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* Track.swift */; };
+		OBJ_111 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* Package.swift */; };
+		OBJ_116 /* CSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* CSS.swift */; };
+		OBJ_117 /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Deprecated.swift */; };
+		OBJ_118 /* Kanna.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Kanna.swift */; };
+		OBJ_119 /* libxmlHTMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* libxmlHTMLDocument.swift */; };
+		OBJ_120 /* libxmlHTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* libxmlHTMLNode.swift */; };
+		OBJ_121 /* libxmlParserOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* libxmlParserOption.swift */; };
+		OBJ_128 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Package.swift */; };
+		OBJ_62 /* CurrentAlbumID.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* CurrentAlbumID.swift */; };
+		OBJ_63 /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Shell.swift */; };
+		OBJ_64 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Token.swift */; };
+		OBJ_65 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* main.swift */; };
+		OBJ_67 /* Kanna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kanna::Kanna::Product" /* Kanna.framework */; };
+		OBJ_68 /* Cider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Cider::Cider::Product" /* Cider.framework */; };
+		OBJ_78 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_83 /* CiderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* CiderClient.swift */; };
+		OBJ_84 /* CiderUrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* CiderUrlBuilder.swift */; };
+		OBJ_85 /* Include.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Include.swift */; };
+		OBJ_86 /* UrlFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* UrlFetcher.swift */; };
+		OBJ_87 /* AppleMusicAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* AppleMusicAPIError.swift */; };
+		OBJ_88 /* Relationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Relationship.swift */; };
+		OBJ_89 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* Resource.swift */; };
+		OBJ_90 /* ResponseRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* ResponseRoot.swift */; };
+		OBJ_91 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* SearchResults.swift */; };
+		OBJ_92 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* Album.swift */; };
+		OBJ_93 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Artist.swift */; };
+		OBJ_94 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* Artwork.swift */; };
+		OBJ_95 /* ContentRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* ContentRating.swift */; };
+		OBJ_96 /* Curator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* Curator.swift */; };
+		OBJ_97 /* EditorialNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* EditorialNotes.swift */; };
+		OBJ_98 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* Genre.swift */; };
+		OBJ_99 /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* MediaType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		76EE46EB219CDD06008D80CE /* PBXContainerItemProxy */ = {
+		76567EAB21A00BE200D34E6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Kanna::Kanna";
+			remoteInfo = Kanna;
+		};
+		76567EAC21A00BE200D34E6B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -49,53 +65,70 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		76567EAD21A00F3300D34E6B /* HTMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLParser.swift; sourceTree = "<group>"; };
 		"AppleMusicAnime::AppleMusicAnime::Product" /* AppleMusicAnime */ = {isa = PBXFileReference; lastKnownFileType = text; path = AppleMusicAnime; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Cider::Cider::Product" /* Cider.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Kanna::Kanna::Product" /* Kanna.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		OBJ_11 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		OBJ_13 /* Twitter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Twitter; sourceTree = SOURCE_ROOT; };
 		OBJ_14 /* Mastodon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Mastodon; sourceTree = SOURCE_ROOT; };
-		OBJ_19 /* CiderClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiderClient.swift; sourceTree = "<group>"; };
-		OBJ_20 /* CiderUrlBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiderUrlBuilder.swift; sourceTree = "<group>"; };
-		OBJ_21 /* Include.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Include.swift; sourceTree = "<group>"; };
-		OBJ_22 /* UrlFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlFetcher.swift; sourceTree = "<group>"; };
-		OBJ_24 /* AppleMusicAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicAPIError.swift; sourceTree = "<group>"; };
-		OBJ_25 /* Relationship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relationship.swift; sourceTree = "<group>"; };
-		OBJ_26 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
-		OBJ_27 /* ResponseRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseRoot.swift; sourceTree = "<group>"; };
-		OBJ_28 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
-		OBJ_30 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
-		OBJ_31 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
-		OBJ_32 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
-		OBJ_33 /* ContentRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRating.swift; sourceTree = "<group>"; };
-		OBJ_34 /* Curator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curator.swift; sourceTree = "<group>"; };
-		OBJ_35 /* EditorialNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorialNotes.swift; sourceTree = "<group>"; };
-		OBJ_36 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
-		OBJ_37 /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
-		OBJ_38 /* MusicVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVideo.swift; sourceTree = "<group>"; };
-		OBJ_39 /* PlayParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayParameters.swift; sourceTree = "<group>"; };
-		OBJ_40 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
-		OBJ_41 /* Storefront.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storefront.swift; sourceTree = "<group>"; };
-		OBJ_42 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
-		OBJ_43 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/eru/MyProjects/AppleMusicAnime/.build/checkouts/Cider.git--6938908326700070177/Package.swift"; sourceTree = "<group>"; };
+		OBJ_17 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/eru/MyProjects/AppleMusicAnime/.build/checkouts/Kanna.git--8313522420318406674/Package.swift"; sourceTree = "<group>"; };
+		OBJ_19 /* CSS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSS.swift; sourceTree = "<group>"; };
+		OBJ_20 /* Deprecated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deprecated.swift; sourceTree = "<group>"; };
+		OBJ_21 /* Kanna.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kanna.swift; sourceTree = "<group>"; };
+		OBJ_22 /* libxmlHTMLDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = libxmlHTMLDocument.swift; sourceTree = "<group>"; };
+		OBJ_23 /* libxmlHTMLNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = libxmlHTMLNode.swift; sourceTree = "<group>"; };
+		OBJ_24 /* libxmlParserOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = libxmlParserOption.swift; sourceTree = "<group>"; };
+		OBJ_28 /* CiderClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiderClient.swift; sourceTree = "<group>"; };
+		OBJ_29 /* CiderUrlBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiderUrlBuilder.swift; sourceTree = "<group>"; };
+		OBJ_30 /* Include.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Include.swift; sourceTree = "<group>"; };
+		OBJ_31 /* UrlFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlFetcher.swift; sourceTree = "<group>"; };
+		OBJ_33 /* AppleMusicAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicAPIError.swift; sourceTree = "<group>"; };
+		OBJ_34 /* Relationship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relationship.swift; sourceTree = "<group>"; };
+		OBJ_35 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		OBJ_36 /* ResponseRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseRoot.swift; sourceTree = "<group>"; };
+		OBJ_37 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		OBJ_39 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		OBJ_40 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		OBJ_41 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		OBJ_42 /* ContentRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRating.swift; sourceTree = "<group>"; };
+		OBJ_43 /* Curator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curator.swift; sourceTree = "<group>"; };
+		OBJ_44 /* EditorialNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorialNotes.swift; sourceTree = "<group>"; };
+		OBJ_45 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		OBJ_46 /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
+		OBJ_47 /* MusicVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVideo.swift; sourceTree = "<group>"; };
+		OBJ_48 /* PlayParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayParameters.swift; sourceTree = "<group>"; };
+		OBJ_49 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		OBJ_50 /* Storefront.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storefront.swift; sourceTree = "<group>"; };
+		OBJ_51 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		OBJ_52 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/eru/MyProjects/AppleMusicAnime/.build/checkouts/Cider.git--6938908326700070177/Package.swift"; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_8 /* CurrentAlbumID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentAlbumID.swift; sourceTree = "<group>"; };
 		OBJ_9 /* Shell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_56 /* Frameworks */ = {
+		OBJ_105 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_57 /* Cider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_92 /* Frameworks */ = {
+		OBJ_122 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_67 /* Kanna.framework in Frameworks */,
+				OBJ_68 /* Cider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,82 +145,97 @@
 		OBJ_15 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_16 /* Cider 0.10.0 */,
+				OBJ_16 /* Kanna 4.0.2 */,
+				OBJ_25 /* Cider 0.10.0 */,
 			);
 			name = Dependencies;
 			sourceTree = "<group>";
 		};
-		OBJ_16 /* Cider 0.10.0 */ = {
+		OBJ_16 /* Kanna 4.0.2 */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_17 /* Cider */,
-				OBJ_43 /* Package.swift */,
+				OBJ_17 /* Package.swift */,
+				OBJ_18 /* Kanna */,
+			);
+			name = "Kanna 4.0.2";
+			path = ".build/checkouts/Kanna.git--8313522420318406674/Sources";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_18 /* Kanna */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_19 /* CSS.swift */,
+				OBJ_20 /* Deprecated.swift */,
+				OBJ_21 /* Kanna.swift */,
+				OBJ_22 /* libxmlHTMLDocument.swift */,
+				OBJ_23 /* libxmlHTMLNode.swift */,
+				OBJ_24 /* libxmlParserOption.swift */,
+			);
+			path = Kanna;
+			sourceTree = "<group>";
+		};
+		OBJ_25 /* Cider 0.10.0 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_26 /* Cider */,
+				OBJ_52 /* Package.swift */,
 			);
 			name = "Cider 0.10.0";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_17 /* Cider */ = {
+		OBJ_26 /* Cider */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_18 /* Client */,
-				OBJ_23 /* CoreObjects */,
-				OBJ_29 /* ResourceObjects */,
+				OBJ_27 /* Client */,
+				OBJ_32 /* CoreObjects */,
+				OBJ_38 /* ResourceObjects */,
 			);
 			name = Cider;
 			path = ".build/checkouts/Cider.git--6938908326700070177/Sources/Cider";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_18 /* Client */ = {
+		OBJ_27 /* Client */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_19 /* CiderClient.swift */,
-				OBJ_20 /* CiderUrlBuilder.swift */,
-				OBJ_21 /* Include.swift */,
-				OBJ_22 /* UrlFetcher.swift */,
+				OBJ_28 /* CiderClient.swift */,
+				OBJ_29 /* CiderUrlBuilder.swift */,
+				OBJ_30 /* Include.swift */,
+				OBJ_31 /* UrlFetcher.swift */,
 			);
 			path = Client;
 			sourceTree = "<group>";
 		};
-		OBJ_23 /* CoreObjects */ = {
+		OBJ_32 /* CoreObjects */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_24 /* AppleMusicAPIError.swift */,
-				OBJ_25 /* Relationship.swift */,
-				OBJ_26 /* Resource.swift */,
-				OBJ_27 /* ResponseRoot.swift */,
-				OBJ_28 /* SearchResults.swift */,
+				OBJ_33 /* AppleMusicAPIError.swift */,
+				OBJ_34 /* Relationship.swift */,
+				OBJ_35 /* Resource.swift */,
+				OBJ_36 /* ResponseRoot.swift */,
+				OBJ_37 /* SearchResults.swift */,
 			);
 			path = CoreObjects;
 			sourceTree = "<group>";
 		};
-		OBJ_29 /* ResourceObjects */ = {
+		OBJ_38 /* ResourceObjects */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_30 /* Album.swift */,
-				OBJ_31 /* Artist.swift */,
-				OBJ_32 /* Artwork.swift */,
-				OBJ_33 /* ContentRating.swift */,
-				OBJ_34 /* Curator.swift */,
-				OBJ_35 /* EditorialNotes.swift */,
-				OBJ_36 /* Genre.swift */,
-				OBJ_37 /* MediaType.swift */,
-				OBJ_38 /* MusicVideo.swift */,
-				OBJ_39 /* PlayParameters.swift */,
-				OBJ_40 /* Playlist.swift */,
-				OBJ_41 /* Storefront.swift */,
-				OBJ_42 /* Track.swift */,
+				OBJ_39 /* Album.swift */,
+				OBJ_40 /* Artist.swift */,
+				OBJ_41 /* Artwork.swift */,
+				OBJ_42 /* ContentRating.swift */,
+				OBJ_43 /* Curator.swift */,
+				OBJ_44 /* EditorialNotes.swift */,
+				OBJ_45 /* Genre.swift */,
+				OBJ_46 /* MediaType.swift */,
+				OBJ_47 /* MusicVideo.swift */,
+				OBJ_48 /* PlayParameters.swift */,
+				OBJ_49 /* Playlist.swift */,
+				OBJ_50 /* Storefront.swift */,
+				OBJ_51 /* Track.swift */,
 			);
 			path = ResourceObjects;
 			sourceTree = "<group>";
-		};
-		OBJ_44 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				"AppleMusicAnime::AppleMusicAnime::Product" /* AppleMusicAnime */,
-				"Cider::Cider::Product" /* Cider.framework */,
-			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		OBJ_5 /*  */ = {
 			isa = PBXGroup;
@@ -198,18 +246,29 @@
 				OBJ_13 /* Twitter */,
 				OBJ_14 /* Mastodon */,
 				OBJ_15 /* Dependencies */,
-				OBJ_44 /* Products */,
+				OBJ_53 /* Products */,
 			);
 			name = "";
 			sourceTree = "<group>";
 		};
+		OBJ_53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"Cider::Cider::Product" /* Cider.framework */,
+				"AppleMusicAnime::AppleMusicAnime::Product" /* AppleMusicAnime */,
+				"Kanna::Kanna::Product" /* Kanna.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_10 /* Token.swift */,
-				OBJ_11 /* main.swift */,
 				OBJ_8 /* CurrentAlbumID.swift */,
 				OBJ_9 /* Shell.swift */,
+				OBJ_10 /* Token.swift */,
+				OBJ_11 /* main.swift */,
+				76567EAD21A00F3300D34E6B /* HTMLParser.swift */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -219,15 +278,16 @@
 /* Begin PBXNativeTarget section */
 		"AppleMusicAnime::AppleMusicAnime" /* AppleMusicAnime */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_48 /* Build configuration list for PBXNativeTarget "AppleMusicAnime" */;
+			buildConfigurationList = OBJ_58 /* Build configuration list for PBXNativeTarget "AppleMusicAnime" */;
 			buildPhases = (
-				OBJ_51 /* Sources */,
-				OBJ_56 /* Frameworks */,
+				OBJ_61 /* Sources */,
+				OBJ_66 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_58 /* PBXTargetDependency */,
+				OBJ_69 /* PBXTargetDependency */,
+				OBJ_71 /* PBXTargetDependency */,
 			);
 			name = AppleMusicAnime;
 			productName = AppleMusicAnime;
@@ -236,9 +296,9 @@
 		};
 		"AppleMusicAnime::SwiftPMPackageDescription" /* AppleMusicAnimePackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_61 /* Build configuration list for PBXNativeTarget "AppleMusicAnimePackageDescription" */;
+			buildConfigurationList = OBJ_74 /* Build configuration list for PBXNativeTarget "AppleMusicAnimePackageDescription" */;
 			buildPhases = (
-				OBJ_64 /* Sources */,
+				OBJ_77 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -250,10 +310,10 @@
 		};
 		"Cider::Cider" /* Cider */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_66 /* Build configuration list for PBXNativeTarget "Cider" */;
+			buildConfigurationList = OBJ_79 /* Build configuration list for PBXNativeTarget "Cider" */;
 			buildPhases = (
-				OBJ_69 /* Sources */,
-				OBJ_92 /* Frameworks */,
+				OBJ_82 /* Sources */,
+				OBJ_105 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -266,9 +326,9 @@
 		};
 		"Cider::SwiftPMPackageDescription" /* CiderPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_94 /* Build configuration list for PBXNativeTarget "CiderPackageDescription" */;
+			buildConfigurationList = OBJ_107 /* Build configuration list for PBXNativeTarget "CiderPackageDescription" */;
 			buildPhases = (
-				OBJ_97 /* Sources */,
+				OBJ_110 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -276,6 +336,36 @@
 			);
 			name = CiderPackageDescription;
 			productName = CiderPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Kanna::Kanna" /* Kanna */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_112 /* Build configuration list for PBXNativeTarget "Kanna" */;
+			buildPhases = (
+				OBJ_115 /* Sources */,
+				OBJ_122 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kanna;
+			productName = Kanna;
+			productReference = "Kanna::Kanna::Product" /* Kanna.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Kanna::SwiftPMPackageDescription" /* KannaPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_124 /* Build configuration list for PBXNativeTarget "KannaPackageDescription" */;
+			buildPhases = (
+				OBJ_127 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KannaPackageDescription;
+			productName = KannaPackageDescription;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -294,7 +384,7 @@
 				en,
 			);
 			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_44 /* Products */;
+			productRefGroup = OBJ_53 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -302,78 +392,211 @@
 				"AppleMusicAnime::SwiftPMPackageDescription" /* AppleMusicAnimePackageDescription */,
 				"Cider::Cider" /* Cider */,
 				"Cider::SwiftPMPackageDescription" /* CiderPackageDescription */,
+				"Kanna::Kanna" /* Kanna */,
+				"Kanna::SwiftPMPackageDescription" /* KannaPackageDescription */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_51 /* Sources */ = {
+		OBJ_110 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_52 /* CurrentAlbumID.swift in Sources */,
-				OBJ_53 /* Shell.swift in Sources */,
-				OBJ_54 /* Token.swift in Sources */,
-				OBJ_55 /* main.swift in Sources */,
+				OBJ_111 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_64 /* Sources */ = {
+		OBJ_115 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_65 /* Package.swift in Sources */,
+				OBJ_116 /* CSS.swift in Sources */,
+				OBJ_117 /* Deprecated.swift in Sources */,
+				OBJ_118 /* Kanna.swift in Sources */,
+				OBJ_119 /* libxmlHTMLDocument.swift in Sources */,
+				OBJ_120 /* libxmlHTMLNode.swift in Sources */,
+				OBJ_121 /* libxmlParserOption.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_69 /* Sources */ = {
+		OBJ_127 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_70 /* CiderClient.swift in Sources */,
-				OBJ_71 /* CiderUrlBuilder.swift in Sources */,
-				OBJ_72 /* Include.swift in Sources */,
-				OBJ_73 /* UrlFetcher.swift in Sources */,
-				OBJ_74 /* AppleMusicAPIError.swift in Sources */,
-				OBJ_75 /* Relationship.swift in Sources */,
-				OBJ_76 /* Resource.swift in Sources */,
-				OBJ_77 /* ResponseRoot.swift in Sources */,
-				OBJ_78 /* SearchResults.swift in Sources */,
-				OBJ_79 /* Album.swift in Sources */,
-				OBJ_80 /* Artist.swift in Sources */,
-				OBJ_81 /* Artwork.swift in Sources */,
-				OBJ_82 /* ContentRating.swift in Sources */,
-				OBJ_83 /* Curator.swift in Sources */,
-				OBJ_84 /* EditorialNotes.swift in Sources */,
-				OBJ_85 /* Genre.swift in Sources */,
-				OBJ_86 /* MediaType.swift in Sources */,
-				OBJ_87 /* MusicVideo.swift in Sources */,
-				OBJ_88 /* PlayParameters.swift in Sources */,
-				OBJ_89 /* Playlist.swift in Sources */,
-				OBJ_90 /* Storefront.swift in Sources */,
-				OBJ_91 /* Track.swift in Sources */,
+				OBJ_128 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_97 /* Sources */ = {
+		OBJ_61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_98 /* Package.swift in Sources */,
+				OBJ_62 /* CurrentAlbumID.swift in Sources */,
+				OBJ_63 /* Shell.swift in Sources */,
+				OBJ_64 /* Token.swift in Sources */,
+				OBJ_65 /* main.swift in Sources */,
+				76567EAE21A00F3300D34E6B /* HTMLParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_78 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_83 /* CiderClient.swift in Sources */,
+				OBJ_84 /* CiderUrlBuilder.swift in Sources */,
+				OBJ_85 /* Include.swift in Sources */,
+				OBJ_86 /* UrlFetcher.swift in Sources */,
+				OBJ_87 /* AppleMusicAPIError.swift in Sources */,
+				OBJ_88 /* Relationship.swift in Sources */,
+				OBJ_89 /* Resource.swift in Sources */,
+				OBJ_90 /* ResponseRoot.swift in Sources */,
+				OBJ_91 /* SearchResults.swift in Sources */,
+				OBJ_92 /* Album.swift in Sources */,
+				OBJ_93 /* Artist.swift in Sources */,
+				OBJ_94 /* Artwork.swift in Sources */,
+				OBJ_95 /* ContentRating.swift in Sources */,
+				OBJ_96 /* Curator.swift in Sources */,
+				OBJ_97 /* EditorialNotes.swift in Sources */,
+				OBJ_98 /* Genre.swift in Sources */,
+				OBJ_99 /* MediaType.swift in Sources */,
+				OBJ_100 /* MusicVideo.swift in Sources */,
+				OBJ_101 /* PlayParameters.swift in Sources */,
+				OBJ_102 /* Playlist.swift in Sources */,
+				OBJ_103 /* Storefront.swift in Sources */,
+				OBJ_104 /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_58 /* PBXTargetDependency */ = {
+		OBJ_69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Kanna::Kanna" /* Kanna */;
+			targetProxy = 76567EAB21A00BE200D34E6B /* PBXContainerItemProxy */;
+		};
+		OBJ_71 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Cider::Cider" /* Cider */;
-			targetProxy = 76EE46EB219CDD06008D80CE /* PBXContainerItemProxy */;
+			targetProxy = 76567EAC21A00BE200D34E6B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		OBJ_108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_109 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_113 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/SwiftClibxml2.git-290558646313512247",
+				);
+				INFOPLIST_FILE = AppleMusicAnime.xcodeproj/Kanna_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-I/usr/local/Cellar/libxml2/2.9.8/include/libxml2",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L/usr/local/Cellar/libxml2/2.9.8/lib",
+					"-lxml2",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/libxml2/2.9.8/include/libxml2";
+				PRODUCT_BUNDLE_IDENTIFIER = Kanna;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Kanna;
+			};
+			name = Debug;
+		};
+		OBJ_114 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/SwiftClibxml2.git-290558646313512247",
+				);
+				INFOPLIST_FILE = AppleMusicAnime.xcodeproj/Kanna_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-I/usr/local/Cellar/libxml2/2.9.8/include/libxml2",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L/usr/local/Cellar/libxml2/2.9.8/lib",
+					"-lxml2",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/libxml2/2.9.8/include/libxml2";
+				PRODUCT_BUNDLE_IDENTIFIER = Kanna;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Kanna;
+			};
+			name = Release;
+		};
+		OBJ_125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_126 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 		OBJ_3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -420,19 +643,29 @@
 			};
 			name = Release;
 		};
-		OBJ_49 /* Debug */ = {
+		OBJ_59 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/SwiftClibxml2.git-290558646313512247",
+				);
 				INFOPLIST_FILE = AppleMusicAnime.xcodeproj/AppleMusicAnime_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-I/usr/local/Cellar/libxml2/2.9.8/include/libxml2",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L/usr/local/Cellar/libxml2/2.9.8/lib",
+					"-lxml2",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/libxml2/2.9.8/include/libxml2";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
@@ -441,19 +674,29 @@
 			};
 			name = Debug;
 		};
-		OBJ_50 /* Release */ = {
+		OBJ_60 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/SwiftClibxml2.git-290558646313512247",
+				);
 				INFOPLIST_FILE = AppleMusicAnime.xcodeproj/AppleMusicAnime_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-I/usr/local/Cellar/libxml2/2.9.8/include/libxml2",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L/usr/local/Cellar/libxml2/2.9.8/lib",
+					"-lxml2",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/libxml2/2.9.8/include/libxml2";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
@@ -462,7 +705,7 @@
 			};
 			name = Release;
 		};
-		OBJ_62 /* Debug */ = {
+		OBJ_75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -471,7 +714,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_63 /* Release */ = {
+		OBJ_76 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -480,7 +723,7 @@
 			};
 			name = Release;
 		};
-		OBJ_67 /* Debug */ = {
+		OBJ_80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -504,7 +747,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_68 /* Release */ = {
+		OBJ_81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -525,30 +768,39 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 3.0;
 				TARGET_NAME = Cider;
-			};
-			name = Release;
-		};
-		OBJ_95 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		OBJ_96 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		OBJ_107 /* Build configuration list for PBXNativeTarget "CiderPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_108 /* Debug */,
+				OBJ_109 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_112 /* Build configuration list for PBXNativeTarget "Kanna" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_113 /* Debug */,
+				OBJ_114 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_124 /* Build configuration list for PBXNativeTarget "KannaPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_125 /* Debug */,
+				OBJ_126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		OBJ_2 /* Build configuration list for PBXProject "AppleMusicAnime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -558,38 +810,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_48 /* Build configuration list for PBXNativeTarget "AppleMusicAnime" */ = {
+		OBJ_58 /* Build configuration list for PBXNativeTarget "AppleMusicAnime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_49 /* Debug */,
-				OBJ_50 /* Release */,
+				OBJ_59 /* Debug */,
+				OBJ_60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_61 /* Build configuration list for PBXNativeTarget "AppleMusicAnimePackageDescription" */ = {
+		OBJ_74 /* Build configuration list for PBXNativeTarget "AppleMusicAnimePackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_62 /* Debug */,
-				OBJ_63 /* Release */,
+				OBJ_75 /* Debug */,
+				OBJ_76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_66 /* Build configuration list for PBXNativeTarget "Cider" */ = {
+		OBJ_79 /* Build configuration list for PBXNativeTarget "Cider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_67 /* Debug */,
-				OBJ_68 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_94 /* Build configuration list for PBXNativeTarget "CiderPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_95 /* Debug */,
-				OBJ_96 /* Release */,
+				OBJ_80 /* Debug */,
+				OBJ_81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

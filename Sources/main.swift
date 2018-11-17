@@ -7,6 +7,7 @@
 
 import Foundation
 import Cider
+import Kanna
 
 // Need to block the thread and wait for URLSession to finish
 // https://stackoverflow.com/q/30702387/4063462
@@ -80,6 +81,11 @@ func getAlbumByIdIncresement() {
                     } else {
                         // iTunes Store
                         contentText = "【iTunes Store 配信中】\n" + contentText
+                        
+                        if let formattedPrice = getAlbumFormattedPriceFromHTML(attributes.url) {
+                            contentText = contentText + "\n" + formattedPrice + "で販売中"
+                        }
+
                         if date > Date() {
                             // not yet released
                             contentText = contentText + "\n予約注文: リリース予定日：" + dateFormatterForJP.string(from: date)
