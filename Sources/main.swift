@@ -62,23 +62,25 @@ func getAlbumByIdIncresement() {
                     }
                     
                     // Create content to post
-                    var contentText = attributes.artistName + "の" + "「" + attributes.name + "」"
-//                        + "アルバム・" + dateFormatterForYear.string(from: date) + "・\(attributes.trackCount)曲\n"
+                    var contentText = attributes.artistName + "の" + "「" + attributes.name + "」" + "\(attributes.trackCount)曲"
+//                        + "\n" + "アルバム・" + dateFormatterForYear.string(from: date) + "・\(attributes.trackCount)曲"
                     
                     if attributes.playParams != nil {
                         // Apple Music
                         contentText = "【Apple Music 配信中】\n" + contentText
+                        contentText = contentText + "\nリリース：" + dateFormatterForJP.string(from: date)
                     } else {
                         // iTunes Store
-                        contentText = "【iTunes Store 配信中】\n" + contentText
+                        contentText = "【iTunes Store 販売中】\n" + contentText
+                        
+                        if date > Date() {
+                            contentText = contentText + "\nリリース予定日：" + dateFormatterForJP.string(from: date)
+                        } else {
+                            contentText = contentText + "\nリリース：" + dateFormatterForJP.string(from: date)
+                        }
                         
                         if let formattedPrice = getAlbumFormattedPriceFromHTML(attributes.url) {
-                            contentText = contentText + "\n" + formattedPrice + "で販売中"
-                        }
-
-                        if date > Date() {
-                            // not yet released
-                            contentText = contentText + "\n予約注文: リリース予定日：" + dateFormatterForJP.string(from: date)
+                            contentText = contentText + "\n" + formattedPrice
                         }
                     }
                     
