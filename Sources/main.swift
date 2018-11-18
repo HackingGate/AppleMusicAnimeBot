@@ -37,11 +37,23 @@ dateFormatterForYear.dateFormat = "yyyy年"
 
 var albumID: UInt64 = 1441410630
 
+var notFoundErrorCount: UInt = 0
+
 func getAlbumByIdIncresement() {
     cider.album(id: String(albumID)) { (results, error) in
-//        if let error = error {
-//            print(error.localizedDescription)
-//        }
+        if let error = error, let apierror = error as? AppleMusicAPIError {
+            if apierror.status == "404" {
+                notFoundErrorCount += 1
+                if notFoundErrorCount > 10000 {
+                    print(error.localizedDescription)
+                    sema.signal()
+                }
+            } else {
+                fatalError(error.localizedDescription)
+            }
+        } else {
+            notFoundErrorCount = 0
+        }
         
         if let results = results {
             if let attributes = results.attributes, let relationships = results.relationships {
