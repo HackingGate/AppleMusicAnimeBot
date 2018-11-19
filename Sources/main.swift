@@ -7,7 +7,6 @@
 
 import Foundation
 import Cider
-import Kanna
 
 // Need to block the thread and wait for URLSession to finish
 // https://stackoverflow.com/q/30702387/4063462
@@ -114,15 +113,15 @@ func getAlbumByIdIncresement() {
                     
                     print(contentText)
                     
-                    if !isExplicit {
+                    if !isExplicit && !attributes.genreNames.contains("チルドレン・ミュージック") {
                         // Toot on Mastodon
                         shell("python", "Mastodon/toot.py", contentText)
                         // Tweet on Twitter
                         shell("python", "Twitter/tweet.py", contentText)
+                        
+                        sema.signal()
                     }
                     
-                } else {
-                    print(attributes.name + " " + String(albumID) + " is not anisong")
                 }
                 
                 saveCurrentAlbumID(String(albumID))
