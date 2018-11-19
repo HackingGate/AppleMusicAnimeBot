@@ -56,6 +56,9 @@ func getAlbumByIdIncresement() {
         
         if let results = results {
             if let attributes = results.attributes, let relationships = results.relationships {
+                
+                saveCurrentAlbumID(String(albumID))
+                
                 if attributes.genreNames.first == "アニメ" {
                     print(attributes.name + " " + String(albumID) + " is anisong")
                     
@@ -100,12 +103,17 @@ func getAlbumByIdIncresement() {
                         contentText = contentText + "\n"
                     }
                     for genreName in attributes.genreNames {
-                        // J-Pop -> JPop, R&B -> RnB, RnB／ソウル -> RnB #ソウル
-                        let genreHashtag = genreName.replacingOccurrences(of: "-", with: "")
-                            .replacingOccurrences(of: "&", with: "n")
-                            .replacingOccurrences(of: "／", with: " #")
-                        // "JPop" -> "#JPop ", "RnB #ソウル" -> "#RnB #ソウル "
-                        contentText = contentText + "#" + genreHashtag + " "
+                        // "アニメ" -> "#アニソン "
+                        if genreName == "アニメ" {
+                            contentText = contentText + "#アニソン "
+                        } else if genreName != "ミュージック" {
+                            // "J-Pop" -> "JPop", "R&B" -> "RnB", "RnB／ソウル" -> "RnB #ソウル"
+                            let genreHashtag = genreName.replacingOccurrences(of: "-", with: "")
+                                .replacingOccurrences(of: "&", with: "n")
+                                .replacingOccurrences(of: "／", with: " #")
+                            // "JPop" -> "#JPop ", "RnB #ソウル" -> "#RnB #ソウル "
+                            contentText = contentText + "#" + genreHashtag + " "
+                        }
                     }
                     
                     // Add url to the end
@@ -124,7 +132,6 @@ func getAlbumByIdIncresement() {
                     
                 }
                 
-                saveCurrentAlbumID(String(albumID))
             }
         }
         
