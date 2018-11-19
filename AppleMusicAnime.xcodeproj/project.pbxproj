@@ -66,6 +66,7 @@
 
 /* Begin PBXFileReference section */
 		76567EAD21A00F3300D34E6B /* HTMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLParser.swift; sourceTree = "<group>"; };
+		7696A09321A244B500CAED08 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		"AppleMusicAnime::AppleMusicAnime::Product" /* AppleMusicAnime */ = {isa = PBXFileReference; lastKnownFileType = text; path = AppleMusicAnime; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Cider::Cider::Product" /* Cider.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Kanna::Kanna::Product" /* Kanna.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -237,9 +238,10 @@
 			path = ResourceObjects;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
+				7696A09321A244B500CAED08 /* README.md */,
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_12 /* Tests */,
@@ -248,7 +250,6 @@
 				OBJ_15 /* Dependencies */,
 				OBJ_53 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_53 /* Products */ = {
@@ -383,7 +384,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_53 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
