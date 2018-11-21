@@ -119,6 +119,11 @@ func getAlbumByIdIncresement() {
                     // Add url to the end
                     contentText = contentText + "\n" + attributes.url.absoluteString
                     
+                    if attributes.playParams == nil {
+                        // Add "?app=itunes"
+                        contentText = contentText + "?app=itunes"
+                    }
+                    
                     print(contentText)
                     
                     if !isExplicit && !attributes.genreNames.contains("チルドレン・ミュージック") {
