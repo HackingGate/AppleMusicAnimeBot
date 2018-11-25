@@ -1,4 +1,4 @@
-# AppleMusicAnimeBot
+# AppleMusicAnimeBot [![Build Status](https://travis-ci.com/HackingGate/AppleMusicAnimeBot.svg?branch=master)](https://travis-ci.com/HackingGate/AppleMusicAnimeBot)
 
 This program uses **Apple Music API** to requests album id by id. Find Anime albums and post it on Twitter and Mastodon.
 
