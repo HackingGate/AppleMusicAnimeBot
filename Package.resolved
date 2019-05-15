@@ -3,11 +3,11 @@
     "pins": [
       {
         "package": "Cider",
-        "repositoryURL": "https://github.com/scottrhoyt/Cider.git",
+        "repositoryURL": "https://github.com/HackingGate/Cider.git",
         "state": {
           "branch": null,
-          "revision": "52532297bbc7c3b6e8d91633a8e4e21abba708f8",
-          "version": "0.10.0"
+          "revision": "47240b9bcf6ec867770f37e2a6921bc2e04e40b0",
+          "version": "0.11.0"
         }
       },
       {
@@ -15,17 +15,8 @@
         "repositoryURL": "https://github.com/tid-kijyun/Kanna.git",
         "state": {
           "branch": null,
-          "revision": "aec73a69619cf9bb540002a17793fb54633f372d",
-          "version": "4.0.2"
-        }
-      },
-      {
-        "package": "SwiftClibxml2",
-        "repositoryURL": "https://github.com/tid-kijyun/SwiftClibxml2.git",
-        "state": {
-          "branch": null,
-          "revision": "c4e67cc970273fc2bee978d12e422974ff184de7",
-          "version": "1.0.2"
+          "revision": "9b8f73f8c8e145dc496565bbf878a709793e7ba3",
+          "version": "5.0.0"
         }
       }
     ]
